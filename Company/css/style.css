@@ -1,0 +1,91 @@
+#wrap{width: 100%;}
+/* 상단 */
+#header{float: left;
+    width: 100%;
+    height: 210px;
+}
+#h_top{margin: 0 auto; margin-top: 17px;margin-left: 20px;
+}
+#logo{float:left;margin-top: 10px; margin-left: 10px;
+}
+#menu_go .info_mn{position: absolute;
+    top:100px; right: 350px;
+    font-size: 22px;
+}
+#menu_go .info_mn li{float:left; margin-right: 5px;
+    padding-right: 80px;
+}
+#sns_go >ul{float: right; margin:70px 0 0 0px ;
+    width:290px;height: 100px;
+}
+#sns_go li{display: inline; padding-left: 10px;}
+
+#contents{
+    float: left;
+    margin-top:221px;
+    width: 100%; height: 408px;
+}
+#contents .com{
+    margin: 0 auto;
+    width: 1200px;height: 408px;
+
+}
+#contents .com_h{ 
+    margin-left: 41.5%;
+    font-size: 35px;
+    color: #333;
+    font-family: '궁서체';
+}
+#contents .com_h2{  
+    margin-top: -15px;
+    text-align: center;
+    font-size: 60px;
+    color: #333;
+    font-family: '궁서체';
+}
+
+#contents .com_b{
+    margin-top: 60px;
+    width:1200px; height: 252px;
+}
+#contents .com_txt{
+    float: left;
+    width: 480px; height: 219px;
+}
+#contents .com_n{
+    float: left;
+    width: 90px; height: 219px;
+}
+#contents .com_n ul{
+    font-size: 20px;
+    font-weight: 600;
+}
+#contents .com_n li{
+    margin-bottom: 20px;
+}
+#contents .com_txt .com_t{
+    float: right;
+    width: 336px; height: 219px;
+}
+#contents .com_t ul{
+    font-size: 20px;
+    font-weight: 600;
+}
+#contents .com_t li{
+    margin-bottom: 20px;
+}
+
+
+#contents .com_txt2{
+    float: right;
+    width: 480px; height: 219px;
+}
+
+#contents .com_txt2 .title{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#contents .com_txt2 .txt{
+    font-size: 20px;
+    font-weight: 600;
+}

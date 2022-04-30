@@ -1,91 +1,74 @@
-#wrap{width: 100%;}
-/* 상단 */
-#header{float: left;
+#wrap{
     width: 100%;
-    height: 210px;
-}
-#h_top{margin: 0 auto; margin-top: 17px;margin-left: 20px;
-}
-#logo{float:left;margin-top: 10px; margin-left: 10px;
-}
-#menu_go .info_mn{position: absolute;
-    top:100px; right: 350px;
-    font-size: 22px;
-}
-#menu_go .info_mn li{float:left; margin-right: 5px;
-    padding-right: 80px;
-}
-#sns_go >ul{float: right; margin:70px 0 0 0px ;
-    width:290px;height: 100px;
-}
-#sns_go li{display: inline; padding-left: 10px;}
-
-#contents{
-    float: left;
-    margin-top:221px;
-    width: 100%; height: 408px;
-}
-#contents .com{
-    margin: 0 auto;
-    width: 1200px;height: 408px;
-
-}
-#contents .com_h{ 
-    margin-left: 41.5%;
-    font-size: 35px;
-    color: #333;
-    font-family: '궁서체';
-}
-#contents .com_h2{  
-    margin-top: -15px;
-    text-align: center;
-    font-size: 60px;
-    color: #333;
-    font-family: '궁서체';
-}
-
-#contents .com_b{
-    margin-top: 60px;
-    width:1200px; height: 252px;
-}
-#contents .com_txt{
-    float: left;
-    width: 480px; height: 219px;
-}
-#contents .com_n{
-    float: left;
-    width: 90px; height: 219px;
-}
-#contents .com_n ul{
-    font-size: 20px;
-    font-weight: 600;
-}
-#contents .com_n li{
-    margin-bottom: 20px;
-}
-#contents .com_txt .com_t{
-    float: right;
-    width: 336px; height: 219px;
-}
-#contents .com_t ul{
-    font-size: 20px;
-    font-weight: 600;
-}
-#contents .com_t li{
-    margin-bottom: 20px;
-}
-
-
-#contents .com_txt2{
-    float: right;
-    width: 480px; height: 219px;
-}
-
-#contents .com_txt2 .title{
-    font-size: 30px;
-    font-weight: bolder;
-}
-#contents .com_txt2 .txt{
-    font-size: 20px;
-    font-weight: 600;
-}
+ }
+ /* 본문내용 */
+ #contents{ margin:0 auto; width:1680px;}
+ #contents .daily{float:left; width:1680px; height:1090px; position: relative;}
+ #contents .daily header{float:left; width:100%; height:250px;
+                        padding-top:90px;
+                        box-sizing: border-box; }
+ #contents .daily header ul{ margin:0 auto; 
+                         width:760px;
+                         display: flex; 
+                         justify-content:space-between }   
+ #contents .daily header ul li{ float:left;}     
+ #contents .daily header ul a{ font-size: 28px;
+                             font-weight: 400;
+                             text-transform: uppercase;
+                             color: rgba(145, 160, 121,1);
+                             padding-bottom: 5px;
+                             border-bottom: 5px solid transparent;
+                             } 
+ #contents .daily header ul a:hover{ 
+                             border-bottom: 5px solid rgba(145, 160, 121,1)}
+ 
+ #contents .daily section{float:left;width:100%; height:840px; position:relative;}
+ #contents .daily section .inbox{width:100%; height:840px; position:relative;}
+ #contents .daily section .images{width:100%; height:640px;
+                                  background: url(../images/sldie_01.jpg) no-repeat 0 0;}
+ #contents .daily section .arr_lef{ position:absolute; 
+                                    top:350px; left:80px;
+                                    z-index:9999;}
+ #contents .daily section .arr_right{position:absolute; 
+                                    top:350px; right:80px;
+                                    z-index:9999;}
+ #contents .daily section .btns{position:absolute; bottom:70px; left:50%;
+                                margin-left:-57.5px;}
+ #contents .daily section .btns li{ width:15px; height:15px;
+                                    border-radius: 50%;
+                                    float: left; margin-right:10px;
+                                    background-color: bisque;}
+ #contents .daily section .btns li a{display:block; width: 100%; height:15px;}
+ 
+ /* 탭기능추가 */
+ #contents .daily > section{display: none;}
+ #contents .daily input{display: none;}
+ #contents .daily label{cursor:pointer;
+     font-size: 28px;
+     font-weight: 400;
+     text-transform: uppercase;
+     color: rgba(145, 160, 121,1);
+     padding-bottom: 5px;
+     border-bottom: 5px solid transparent;}
+ #contents .daily label.btn1{float: left; margin:135px 0 0 500px;}  
+ #contents .daily label.btn2{float: left; margin:135px 0 0 100px;}  
+ #contents .daily label.btn3{float: left; margin:135px 0 0 100px;}  
+ #contents .daily label.btn4{float: left; margin:135px 0 0 100px;}    
+ #contents .daily label:hover{border-bottom: 5px solid rgba(145, 160, 121,1)}
+ 
+ #contents .daily #tab1:checked ~ section.tab1{display:block;}
+ #contents .daily #tab2:checked ~ section.tab2{display:block;}
+ #contents .daily #tab3:checked ~ section.tab3{display:block;}
+ #contents .daily #tab4:checked ~ section.tab4{display:block;}
+ 
+ #contents .daily section.tab1{background-color: rgb(212, 208, 203);  
+                               position:absolute; top:250px; left:0; z-index:400;}
+ #contents .daily section.tab2{background-color: antiquewhite;  
+                               position:absolute; top:250px; left:0; z-index:300;}
+ #contents .daily section.tab3{background-color: rgb(110, 201, 57); 
+                               position:absolute; top:250px; left:0; z-index:200}
+ #contents .daily section.tab4{background-color: rgb(114, 177, 230);  
+                               position:absolute; top:250px; left:0; z-index:100;} 
+ /* 탭기능추가 End */
+ 
+ 
